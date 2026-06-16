@@ -1,0 +1,10 @@
+﻿cond1,cond2,total,defects,defect_rate_pct,lift_vs_remaining,excess_defects_vs_remaining,var1,var2
+"S_Inj_Pressure_04=(3.4, 4.0]",S_Barrel_Temperature_02=224,273,272,99.63369963369964,30.96716059782262,263.21650177965864,S_Inj_Pressure_04,S_Barrel_Temperature_02
+"A_Average_Back_Pressure=(112.0, 117.0]",S_Barrel_Temperature_02=224,270,268,99.25925925925925,30.850780745902696,259.31302373812395,A_Average_Back_Pressure,S_Barrel_Temperature_02
+"A_Cushion_Position=(2.09, 2.11]","A_Average_Back_Pressure=(112.0, 117.0]",283,153,54.06360424028268,16.80351448517009,143.8947619181077,A_Cushion_Position,A_Average_Back_Pressure
+"A_Average_Back_Pressure=(112.0, 117.0]","S_Inj_Pressure_04=(3.4, 4.0]",1358,719,52.94550810014728,16.455998906980444,675.3077268013789,A_Average_Back_Pressure,S_Inj_Pressure_04
+"A_Barrel_Temperature_3=(223.3, 225.5]","S_Inj_Pressure_04=(3.4, 4.0]",1013,426,42.0533070088845,13.070592747247456,393.4077520248872,A_Barrel_Temperature_3,S_Inj_Pressure_04
+"A_Average_Back_Pressure=(112.0, 117.0]","A_Barrel_Temperature_3=(223.3, 225.5]",1367,419,30.651060716898314,9.526659385362795,375.018160925983,A_Average_Back_Pressure,A_Barrel_Temperature_3
+"A_Barrel_Temperature_3=(223.3, 225.5]",S_Barrel_Temperature_02=224,920,273,29.67391304347826,9.222952014846236,243.3999327373112,A_Barrel_Temperature_3,S_Barrel_Temperature_02
+"A_Cushion_Position=(2.09, 2.11]","S_Inj_Pressure_04=(3.4, 4.0]",607,157,25.86490939044481,8.039075191293216,137.47039040385638,A_Cushion_Position,S_Inj_Pressure_04
+"A_Cushion_Position=(2.09, 2.11]","A_Barrel_Temperature_3=(223.3, 225.5]",598,149,24.91638795986622,7.744265146306503,129.75995627925226,A_Cushion_Position,A_Barrel_Temperature_3

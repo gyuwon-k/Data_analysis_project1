@@ -1,0 +1,6 @@
+﻿column,operator,threshold,total,defects,min_value,max_value,defect_share_pct,direction,inclusive_rank
+VALUE4,<=,0.3,876,876,0.1,0.3,23.7012987012987,low,1
+VALUE1,>=,53.0,392,392,53.0,99.0,10.606060606060606,high,1
+VALUE2,<=,3.0,205,205,1.0,3.0,5.546536796536797,low,1
+VALUE4,>=,5.4,123,123,5.4,27.0,3.3279220779220777,high,1
+VALUE3,>=,100.7,103,103,100.7,512.0,2.786796536796537,high,1
