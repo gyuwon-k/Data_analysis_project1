@@ -126,9 +126,20 @@ def inject_style() -> None:
         }
 
         [data-testid="stSidebar"] {
-            background: rgba(3,7,18,0.96);
-            border-right: 1px solid rgba(226,232,240,0.18);
+            background:
+                linear-gradient(180deg, rgba(15,23,42,0.99), rgba(17,24,39,0.98)),
+                radial-gradient(circle at 10% 0%, rgba(124,140,255,0.16), transparent 36%);
+            border-right: 1px solid rgba(124,140,255,0.28);
             backdrop-filter: blur(24px);
+            box-shadow:
+                inset -1px 0 0 rgba(255,255,255,0.05),
+                16px 0 50px rgba(0,0,0,0.20);
+        }
+
+        [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
+        [data-testid="stSidebar"] label,
+        [data-testid="stSidebar"] span {
+            color: #F8FAFC !important;
         }
 
         h1, h2, h3 {
@@ -337,6 +348,140 @@ def inject_style() -> None:
         .stMultiSelect div[data-baseweb="select"],
         .stNumberInput input {
             border-radius: 8px;
+            background-color: #F8FAFC !important;
+            border: 1px solid rgba(203,213,225,0.92) !important;
+            color: #0F172A !important;
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.92),
+                0 8px 24px rgba(0,0,0,0.22);
+        }
+
+        .stSelectbox div[data-baseweb="select"] *,
+        .stMultiSelect div[data-baseweb="select"] *,
+        .stNumberInput input {
+            color: #0F172A !important;
+        }
+
+        .stSelectbox div[data-baseweb="select"] span,
+        .stSelectbox div[data-baseweb="select"] div,
+        .stMultiSelect div[data-baseweb="select"] span,
+        .stMultiSelect div[data-baseweb="select"] div,
+        div[data-baseweb="popover"] li,
+        div[data-baseweb="popover"] div,
+        div[role="listbox"] div {
+            color: #0F172A !important;
+        }
+
+        .stMultiSelect [data-baseweb="tag"] {
+            background-color: #E0E7FF !important;
+            border: 1px solid rgba(124,140,255,0.35) !important;
+        }
+
+        .stMultiSelect [data-baseweb="tag"] span {
+            color: #111827 !important;
+        }
+
+        div[data-baseweb="popover"] {
+            background: #F8FAFC !important;
+        }
+
+        div[data-baseweb="popover"] > div,
+        div[data-baseweb="popover"] ul,
+        div[data-baseweb="popover"] li,
+        div[data-baseweb="popover"] [role="listbox"],
+        div[data-baseweb="popover"] [role="option"],
+        ul[role="listbox"],
+        li[role="option"],
+        div[role="option"],
+        [data-baseweb="menu"] {
+            background-color: #F8FAFC !important;
+            color: #0F172A !important;
+        }
+
+        div[data-baseweb="popover"] *,
+        ul[role="listbox"] *,
+        li[role="option"] *,
+        div[role="option"] *,
+        [data-baseweb="menu"] * {
+            color: #0F172A !important;
+            opacity: 1 !important;
+        }
+
+        div[data-baseweb="popover"] li:hover,
+        div[data-baseweb="popover"] [role="option"]:hover,
+        li[role="option"]:hover,
+        div[role="option"]:hover {
+            background-color: #E0E7FF !important;
+            color: #0F172A !important;
+        }
+
+        div[data-baseweb="select"] input::placeholder {
+            color: #334155 !important;
+            opacity: 1 !important;
+        }
+
+        .stSelectbox div[data-baseweb="select"]:hover,
+        .stMultiSelect div[data-baseweb="select"]:hover,
+        .stNumberInput input:hover {
+            border-color: rgba(124,140,255,0.76) !important;
+            background-color: #FFFFFF !important;
+        }
+
+        .stSelectbox div[data-baseweb="select"]:focus-within,
+        .stMultiSelect div[data-baseweb="select"]:focus-within,
+        .stNumberInput input:focus {
+            border-color: rgba(154,166,255,0.90) !important;
+            box-shadow:
+                0 0 0 1px rgba(124,140,255,0.42),
+                0 0 0 4px rgba(124,140,255,0.16),
+                inset 0 1px 0 rgba(255,255,255,0.08) !important;
+        }
+
+        div[data-baseweb="select"],
+        div[data-baseweb="select"] > div,
+        div[data-baseweb="select"] input {
+            background-color: #F8FAFC !important;
+            color: #0F172A !important;
+        }
+
+        div[data-baseweb="select"] svg {
+            color: #0F172A !important;
+            fill: #0F172A !important;
+        }
+
+        [data-testid="stSidebar"] div[data-baseweb="select"],
+        [data-testid="stSidebar"] div[data-baseweb="select"] > div,
+        [data-testid="stSidebar"] div[data-baseweb="select"] input,
+        [data-testid="stSidebar"] .stNumberInput input {
+            background-color: #111827 !important;
+            color: #F8FAFC !important;
+            border-color: rgba(148,163,184,0.34) !important;
+        }
+
+        [data-testid="stSidebar"] div[data-baseweb="select"] span,
+        [data-testid="stSidebar"] div[data-baseweb="select"] div,
+        [data-testid="stSidebar"] div[data-baseweb="select"] svg {
+            color: #F8FAFC !important;
+            fill: #F8FAFC !important;
+        }
+
+        [data-testid="stDataFrame"] {
+            font-size: 14px !important;
+        }
+
+        [data-testid="stDataFrame"] div {
+            font-size: 14px !important;
+        }
+
+        .stSlider [data-baseweb="slider"] > div {
+            color: #9AA6FF;
+        }
+
+        .stRadio div[role="radiogroup"] {
+            background: rgba(30,41,59,0.68);
+            border: 1px solid rgba(148,163,184,0.22);
+            border-radius: 10px;
+            padding: 8px 10px;
         }
 
         @media (max-width: 900px) {
@@ -391,8 +536,7 @@ def display_name(column: str) -> str:
 
 
 def display_label(column: str) -> str:
-    korean = display_name(column)
-    return korean if korean == column else f"{korean} ({column})"
+    return display_name(column)
 
 
 def display_condition(condition: str) -> str:
@@ -437,6 +581,13 @@ def chart_layout(fig: go.Figure, height: int = 430) -> go.Figure:
     )
     fig.update_xaxes(gridcolor="rgba(255,255,255,0.06)", zerolinecolor="rgba(255,255,255,0.08)")
     fig.update_yaxes(gridcolor="rgba(255,255,255,0.06)", zerolinecolor="rgba(255,255,255,0.08)")
+    fig.update_layout(
+        title_font=dict(size=19, color="#F8FAFC"),
+        font=dict(size=14, color="#EDEDEF", family="Inter, system-ui, sans-serif"),
+        legend=dict(font=dict(size=13)),
+    )
+    fig.update_xaxes(title_font=dict(size=15), tickfont=dict(size=13))
+    fig.update_yaxes(title_font=dict(size=15), tickfont=dict(size=13))
     return fig
 
 
@@ -768,6 +919,8 @@ def render_single(data: pd.DataFrame, features: list[str], bins: int, mode: str,
             color_discrete_map={GOOD_LABEL: "#63d29a", DEFECT_LABEL: "#ff6171"},
             title="양품/불량 분포",
         )
+        fig.update_xaxes(title_text=display_name(selected))
+        fig.update_yaxes(title_text="건수")
         st.plotly_chart(chart_layout(fig, 520), use_container_width=True)
 
     st.dataframe(display_table(table), use_container_width=True, height=360)
@@ -907,13 +1060,6 @@ def main() -> None:
     data = load_data()
     features = numeric_features(data)
 
-    st.caption("Defect Pattern Explorer")
-    st.title("사출성형 공정 불량률 조건 조합 탐색")
-    st.write(
-        "단일 임계값, 1개 변수 구간, 2개 변수 히트맵, 3개 변수 조합 랭킹을 바꿔가며 "
-        "불량률이 급격히 상승하는 조건을 찾는 Streamlit 분석 도구입니다."
-    )
-
     with st.sidebar:
         st.header("분석 설정")
         min_support_absolute = st.number_input("절대조건 최소 표본 수", min_value=1, max_value=5000, value=100, step=10)
@@ -964,6 +1110,11 @@ def main() -> None:
     )
 
     with tabs[0]:
+        st.title("사출성형 공정 불량률 조건 조합 탐색")
+        st.write(
+            "단일 임계값, 1개 변수 구간, 2개 변수 히트맵, 3개 변수 조합 랭킹을 바꿔가며 "
+            "불량률이 급격히 상승하는 조건을 찾는 Streamlit 분석 도구입니다."
+        )
         render_overview(filtered, features, absolute_rules, absolute_mask)
         if exclude_absolute and not absolute_rules.empty:
             st.info(
@@ -972,18 +1123,23 @@ def main() -> None:
             )
 
     with tabs[1]:
+        st.caption("절대조건")
         render_absolute_rules(filtered, absolute_rules, absolute_mask)
 
     with tabs[2]:
+        st.caption("1개 변수 분석")
         render_single(analysis_data, features, int(bins), bin_mode, int(exact_limit), int(min_count))
 
     with tabs[3]:
+        st.caption("2개 변수 분석")
         render_pair(analysis_data, features, int(bins), bin_mode, int(exact_limit), int(min_count))
 
     with tabs[4]:
+        st.caption("3개 변수 분석")
         render_triple(analysis_data, features, int(bins), bin_mode, int(exact_limit), int(min_count))
 
     with tabs[5]:
+        st.caption("데이터 품질")
         render_data_quality(filtered, features)
 
 
